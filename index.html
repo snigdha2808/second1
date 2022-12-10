@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!--     font sizee.....   -->
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+
+
+
+       <link rel="stylesheet"  href = "styles.css">
+
+    <title> Javascript Game </title>
+</head>
+<body>
+
+      <h1> Tries Remaining </h1>
+        <div class="topTools">
+
+
+            <div class="time">
+
+                <span class="minute">00</span>
+
+                <span>:</span>
+
+                <span class="second">00</span>
+
+
+             </div>
+
+            <span class="refresh"> <img src="./image/refresh.svg" alt="refresh"> </span>
+
+
+        </div>
+
+    <section class="memory-game">
+
+        <div class="memory-card" data-id="1">
+          <!--    animals   cards   -->
+            <img class="front-face" src="./image/elephant.png" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="1">
+
+
+            <img class="front-face" src="./image/elephant.png" alt="Front image">
+
+
+            <div class="back-face"></div>
+
+        </div>
+        <div class="memory-card" data-id="2">
+
+            <img class="front-face" src="./image/giraffe.png" alt="Front image">
+
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="2">
+
+            <img class="front-face" src="./image/giraffe.png" alt="Front image">
+
+            <div class="back-face"></div>
+
+        </div>
+        <div class="memory-card" data-id="3">
+
+            <img class="front-face" src="./image/lion.png" alt="Front image">
+
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="3">
+            <img class="front-face" src="./image/lion.png" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="4">
+            <img class="front-face" src="./image/turtle.png" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="4">
+            <img class="front-face" src="./image/turtle.png" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="5">
+            <img class="front-face" src="./image/whale.png" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="5">
+          <!-- 1349549998-->
+            <img class="front-face" src="./image/whale.png" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="6">
+
+            <img class="front-face" src="./image/zebra.png" alt="Front image">
+
+            <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-id="6">
+
+            <img class="front-face" src="./image/zebra.png" alt="Front image">
+            <div class="back-face"></div>
+        </div>
+    </section>
+
+    <section id="congratsSection" class="hidden">
+        <div id="congratsDiv">
+
+
+            <img src="./image/congrats.jpg" alt="congratsImage">
+
+            <p class="final">
+                <span id="totalTime"></span>
+            </p>
+            <br>
+            <p>
+                <a class="again">Play Again !! </a>
+
+            </p>
+
+        </div>
+
+    </section>
+
+   <script src="app.js"></script>
+
+</body>
+</html>
