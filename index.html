@@ -1,136 +1,86 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--   -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-    <!--     font sizee.....   -->
-
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
-
-
-
-       <link rel="stylesheet"  href = "styles.css">
-
-    <title> Javascript Game </title>
+    <title>End Term Web Test</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-      <h1> Tries Remaining </h1>
-        <div class="topTools">
-
-
-            <div class="time">
-
-                <span class="minute">00</span>
-
-                <span>:</span>
-
-                <span class="second">00</span>
+    <header>
+    </header>
+    <main>
+        <article>
+            <h1 class="head h" id="bhead">Book Title</h1>
+            <div class="bo b" id="btext">
+                Select a Book on the right.
+            </div>
+        </article>
 
 
-             </div>
-
-            <span class="refresh"> <img src="./image/refresh.svg" alt="refresh"> </span>
-
-
-        </div>
-
-    <section class="memory-game">
-
-        <div class="memory-card" data-id="1">
-          <!--    animals   cards   -->
-            <img class="front-face" src="./image/elephant.png" alt="Front image">
-            <div class="back-face"></div>
-        </div>
-        <div class="memory-card" data-id="1">
+        <aside>
+            <section class="search">
 
 
-            <img class="front-face" src="./image/elephant.png" alt="Front image">
+                <h1 class="head">Search</h1>
+
+                <div class="bo">
+
+                    <input type="text" placeholder="Search for...">
+
+                    <button> Search</button>
+                </div>
+                <!--abcsdef-->
+            </section>
+            <section class="search">
+                <h1 class="head">Select a book</h1>
+                <div class="bo books">
+                    <a href="./books/AliceInWonderland.txt" id="alice">Alice In Wonderland</a>
+                    <a href="./books/JekyllAndHyde.txt" id="hyde">Jekyll And Hyde</a>
+                    <a href="./books/LOTR.txt" id="lord">Lord Of The Rings</a>
+                </div>
 
 
-            <div class="back-face"></div>
-
-        </div>
-        <div class="memory-card" data-id="2">
-
-            <img class="front-face" src="./image/giraffe.png" alt="Front image">
-
-            <div class="back-face"></div>
-        </div>
-        <div class="memory-card" data-id="2">
-
-            <img class="front-face" src="./image/giraffe.png" alt="Front image">
-
-            <div class="back-face"></div>
-
-        </div>
-        <div class="memory-card" data-id="3">
-
-            <img class="front-face" src="./image/lion.png" alt="Front image">
-
-            <div class="back-face"></div>
-        </div>
-        <div class="memory-card" data-id="3">
-            <img class="front-face" src="./image/lion.png" alt="Front image">
-            <div class="back-face"></div>
-        </div>
-        <div class="memory-card" data-id="4">
-            <img class="front-face" src="./image/turtle.png" alt="Front image">
-            <div class="back-face"></div>
-        </div>
-        <div class="memory-card" data-id="4">
-            <img class="front-face" src="./image/turtle.png" alt="Front image">
-            <div class="back-face"></div>
-        </div>
-        <div class="memory-card" data-id="5">
-            <img class="front-face" src="./image/whale.png" alt="Front image">
-            <div class="back-face"></div>
-        </div>
-        <div class="memory-card" data-id="5">
-          <!-- 1349549998-->
-            <img class="front-face" src="./image/whale.png" alt="Front image">
-            <div class="back-face"></div>
-        </div>
-        <div class="memory-card" data-id="6">
-
-            <img class="front-face" src="./image/zebra.png" alt="Front image">
-
-            <div class="back-face"></div>
-        </div>
-        <div class="memory-card" data-id="6">
-
-            <img class="front-face" src="./image/zebra.png" alt="Front image">
-            <div class="back-face"></div>
-        </div>
-    </section>
-
-    <section id="congratsSection" class="hidden">
-        <div id="congratsDiv">
+            </section>
+            <section class = "search" >
+                <h1 class = "head"> Most Used Words </h1>
+                <div class="bo">
 
 
-            <img src="./image/congrats.jpg" alt="congratsImage">
 
-            <p class="final">
-                <span id="totalTime"></span>
-            </p>
-            <br>
-            <p>
-                <a class="again">Play Again !! </a>
+                </div>
 
-            </p>
 
-        </div>
+            </section>
+            <section class="search">
 
-    </section>
+                <h1 class="head"> Least Used Words </h1>
+                <div class="bo">
 
-   <script src="app.js"></script>
+                </div>
+            </section>
+            <section class="search">
+
+                <h1 class="head"> Document Stats </h1>
+
+                <div class="bo">
+
+                </div>
+            </section>
+
+        </aside>
+    </main>
+<!--   buttons   -->
+    <button id="btn">  <a href="imageMatch.html" style="text-decoration: none;">Next</a></button>
+<!--jsfile attach
+-->
+    <script src="./script.js" type="module"></script>
+
 
 </body>
 </html>
